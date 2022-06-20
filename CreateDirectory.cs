@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +7,11 @@ using System.IO;
 
 namespace WorkByDirectoryAndFile
 {
- class Program
+ class CreateDirectory
  {
-    static void Main(string[] args)
+    static void Folder(string[] args)
     {
-        File.Create("N:\\TestFolder\\SubFolder\\test.txt");
+        Directory.CreateDirectory("N:\\TestFolder\\SubFolder");
         Console.WriteLine("created");
         Console.ReadKey();
     }
