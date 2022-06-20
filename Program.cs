@@ -11,7 +11,11 @@ namespace WorkByDirectoryAndFile
  {
     static void Main(string[] args)
     {
-        File.Create("N:\\TestFolder\\SubFolder\\test.txt");
+        string Path = 
+        "N:\\TestFolder\\SubFolder\\test.txt";
+        TextWriter writer = new StreamWriter(Path);
+        writer.Write("");
+        writer.Close();
         Console.WriteLine("created");
         Console.ReadKey();
     }
